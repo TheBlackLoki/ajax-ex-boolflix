@@ -22,7 +22,8 @@
     </div>
     <script id="templateFilm" type="text/x-handlebars-template">
 				<div class="movieseries">
-					<span>Titolo {{tipo}}: {{nomeserie}}{{title}}</span>
+          <img {{{sitocopertina}}}{{{dimensionecopertina}}}{{{immaginecopertina}}}" alt="">
+					<span>Titolo {{tipo}}: {{title}}</span>
 					<span>Titolo originale: {{originalTitle}}</span>
 					<span>Lingua:{{{language}}}</span>
 					<span>Voto:{{#each vote}}<i class="{{this}} fa-star"></i>{{/each}}</span>
