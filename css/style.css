@@ -3,19 +3,75 @@
   padding: 0;
   box-sizing: border-box;
 }
-span{
-  display: block;
+
+
+/* caratteristiche header,logo e searchbar */
+
+.container{
+  display: flex;
 }
-.movieseries{
-  width: 33%;
-  margin:20px 0
+.testata{
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
 }
+.searchbar{
+  margin-right: 20px;
+}
+#logo{
+  width: 180px;
+  margin: 8px 20px;
+}
+#cerca{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border-width: 1.5px;
+  padding: 2px 10px;
+  margin-right: 20px;
+}
+#boton{
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+
+/* parte main */
+
 .libreriaFilm,.libreriaSerie{
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
 }
-.notfound{
-  width: 185px;
-  height: auto;
+h1{
+  color: White;
+}
+body{
+  background-color: grey;
+}
+
+.movieseries{
+  height: 550px;
+  width: 33%;
+  margin:20px 0
+}
+
+.copertina,.info{
+  width: 342px;
+  height: 500px;
+}
+.info{
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+span{
+  display: block;
+}
+.overview{
+  display:block;
+  overflow: hidden;
+  height: 370px;
+}
+.fa-star{
+  color:gold;
 }

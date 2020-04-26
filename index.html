@@ -8,25 +8,36 @@
     <title></title>
   </head>
   <body>
-    <div class="searchbar">
-      <input id="zerca"type="text" name="" placeholder="Meti chi el titol" value="">
-      <button id="boton"type="button" name="button">Sghiza el boton</button>
-    </div>
-    <h1>Film</h1>
-    <div class="libreriaFilm">
+    <header>
+      <div class="container testata">
+        <img id="logo"src="img/logo.png" alt="Boolflix">
+        <div class="searchbar">
+          <input id="cerca"type="text" name="" placeholder="Inserisci il titolo" value="">
+          <button id="boton"type="button" name="button">Cerca</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Film</h1>
+      <div class="libreriaFilm">
 
-    </div>
-    <h1>Serie</h1>
-    <div class="libreriaSerie">
+      </div>
+      <h1>Serie</h1>
+      <div class="libreriaSerie">
 
-    </div>
+      </div>
+    </main>
     <script id="templateFilm" type="text/x-handlebars-template">
 				<div class="movieseries">
-          <img {{{sitocopertina}}}{{{dimensionecopertina}}}{{{immaginecopertina}}}" alt="">
-					<span>Titolo {{tipo}}: {{title}}</span>
-					<span>Titolo originale: {{originalTitle}}</span>
-					<span>Lingua:{{{language}}}</span>
-					<span>Voto:{{#each vote}}<i class="{{this}} fa-star"></i>{{/each}}</span>
+          <img class="copertina " src="{{{sitocopertina}}}{{{dimensionecopertina}}}{{{immaginecopertina}}}" alt="{{title}}">
+          <div class="info">
+  					<span>Titolo: {{title}}</span>
+  					<span>Titolo originale: {{originalTitle}}</span>
+  					<span>Lingua:{{{language}}}</span>
+  					<span>Voto:{{#each vote}}<i class="{{this}} fa-star"></i>{{/each}}</span>
+            <span>Tipo: {{tipo}}</span>
+            <span class="overview">Overview: {{overview}}</span>
+          </div>
 				</div>
 		</script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
