@@ -41,11 +41,11 @@ $(document).ready(function(){
           $(dove).append("non ci sono " + tipo + " con questo nome")
         };
         $(".info").hide()
-        $(".copertina").mouseover(function () {
+        $(".copertina").mouseenter(function () {
           $(this).hide()
           $(this).next().show()
         })
-        $(".info").mouseout(function () {
+        $(".info").mouseleave(function () {
           $(this).hide()
           $(this).prev().show()
         })
